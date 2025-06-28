@@ -101,6 +101,7 @@ const menu = async (m, sock) => {
 │➽ gpt
 │➽ lydia
 │➽ inconnu-ai
+│➽ chatbot 
 ┗▣
 
 ┏▣ ◈🔰*CONVERTER* 🔰◈
@@ -136,6 +137,7 @@ const menu = async (m, sock) => {
 │➽ ringtone
 │➽ playstore
 │➽ shazam
+│➽ play
 ┗▣
 
 ┏▣ ◈🔰*FUN* 🔰◈
@@ -193,6 +195,7 @@ const menu = async (m, sock) => {
 │➽ demote
 │➽ groupinfo
 │➽ balance
+│➽ warn
 ┗▣
 
 ┏▣ ◈🔰*HENTAI* 🔰◈
