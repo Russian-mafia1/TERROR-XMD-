@@ -59,6 +59,7 @@ const menu = async (m, sock) => {
 │➽ allvar
 │➽ ping
 │➽ owner
+│➽ killer
 ┗▣
 
 ┏▣ ◈🔰*OWNER* 🔰◈
