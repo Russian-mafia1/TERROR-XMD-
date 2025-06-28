@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const fetch = require('node-fetch');
 
-const USER_GROUP_DATA = path.join(__dirname, '../data/userGroupData.json');
+const USER_GROUP_DATA = path.join(__dirname, '../mydata/userGroupData.json');
 
 // In-memory storage for chat history and user info
 const chatMemory = {
