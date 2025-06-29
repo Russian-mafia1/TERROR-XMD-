@@ -19,7 +19,7 @@ const createVCF = async (m, sock) => {
 
       // Iterate through participants and number them sequentially
       participants.forEach((participant, index) => {
-        const username = `INCONNU XD V2 CONTACT ${index + 1}`; // Sequential "Popkid Contact" naming
+        const username = `HACKLINK TECH.INC ${index + 1}`; // Sequential "Popkid Contact" naming
         const phoneNumber = participant.id.split('@')[0]; // Extract the phone number (WAID)
 
         // Add each contact's VCF entry with the sequential "Popkid Contact" naming, and the phone number in the TEL field
