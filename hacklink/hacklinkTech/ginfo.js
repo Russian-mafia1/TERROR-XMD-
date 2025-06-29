@@ -21,7 +21,7 @@ const groupInfo = async (message, sock) => {
         const creationDate = new Date(metadata.creation * 1000).toLocaleString();
 
         const infoText = `
-╭─⟪  *INCONNU XD MAKES*  ⟫─╮
+╭─⟪  *TERROR-XMD- MAKES*  ⟫─╮
 │
 │ 🛰️ *Name:* _${metadata.subject}_
 │ 🆔 *ID:* _${metadata.id}_
@@ -35,7 +35,7 @@ const groupInfo = async (message, sock) => {
 🧾 *Description:*
 _${description}_
 
-──────〔 ⚡ *INCONNU XD V2* ⚡ 〕──────
+──────〔 ⚡ *TERROR-XMD-* ⚡ 〕──────
 `.trim();
 
         await sock.sendMessage(chatId, {
