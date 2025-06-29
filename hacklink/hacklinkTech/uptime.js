@@ -14,7 +14,7 @@ const alive = async (m, Matrix) => {
   if (['alive', 'hansuptime', 'uptime'].includes(cmd)) {
     const uptimeMessage = `
 ╭━━━━━━━❰ 🔥 ❱━━━━━━━╮
-┃🧿 *BOT : INCONNU-XD V2*
+┃🧿 *BOT : TERROR-XMD-*
 ┃ 
 ┃⏳ *Uptime:*
 ┃   ┗━➤ ${days}d ${hours}h ${minutes}m ${seconds}s
@@ -47,7 +47,7 @@ const alive = async (m, Matrix) => {
               text: uptimeMessage
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "POWERED BY INCONNU-XD V2"
+              text: "POWERED BY TERROR-XMD-"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               title: "🚨 SYSTEM STATUS",
@@ -63,8 +63,8 @@ const alive = async (m, Matrix) => {
               forwardingScore: 999,
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-                newsletterJid: '554488138425',
-                newsletterName: "INCONNU-XD",
+                newsletterJid: '120363401087525436@newsletter',
+                newsletterName: "HACKLINK TECH.INC",
                 serverMessageId: 143
               }
             }
