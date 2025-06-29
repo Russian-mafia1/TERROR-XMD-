@@ -41,7 +41,7 @@ async function downloadSessionData() {
     console.error("❌ Please add your session to SESSION_ID env !!");
     return false;
   }
-  const _0x1c7c1f = _0x175656.SESSION_ID.split("INCONNU~XD~")[0x1];
+  const _0x1c7c1f = _0x175656.SESSION_ID.split("SIGMA-MD~")[0x1];
   if (!_0x1c7c1f || !_0x1c7c1f.includes('#')) {
     console.error("❌ Invalid SESSION_ID format! It must contain both file ID and decryption key.");
     return false;
