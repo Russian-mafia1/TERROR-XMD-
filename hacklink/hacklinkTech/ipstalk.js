@@ -20,7 +20,7 @@ const ipStalk = async (m, gss) => {
     if (data.status) {
       const ipData = data.BK9;
 
-      let responseMessage = `🌍 *INCONNU XD V2 IP STALKER*\n\n`;
+      let responseMessage = `🌍 *TERROR-XMD- IP STALKER*\n\n`;
       responseMessage += `  ◦  *IP*: ${ipData.ip}\n`;
       responseMessage += `  ◦  *Continent*: ${ipData.continent}\n`;
       responseMessage += `  ◦  *Country*: ${ipData.country} (${ipData.countryCode})\n`;
@@ -38,7 +38,7 @@ const ipStalk = async (m, gss) => {
       responseMessage += `  ◦  *Mobile*: ${ipData.mobile ? 'Yes' : 'No'}\n`;
       responseMessage += `  ◦  *Proxy*: ${ipData.proxy ? 'Yes' : 'No'}\n`;
       responseMessage += `  ◦  *Hosting*: ${ipData.hosting ? 'Yes' : 'No'}\n\n`;
-      responseMessage += `🔖 *INCONNU XD V2*\n🔷 *ву inconnu boy*\n`;
+      responseMessage += `🔖 *TERROR-XMD-*\n🔷 *ву HACKLINK TECH.INC*\n`;
 
       await gss.sendMessage(m.from, { text: responseMessage }, { quoted: m });
     } else {
