@@ -19,7 +19,7 @@ const antiLink = async (m, gss) => {
 
     // Show usage if only "antilink" is typed
     if (command === "antilink") {
-      return m.reply(`*╭─❍『 ANTILINK USAGE 』❍\n│  ➤ ${prefix}antilink on\n│  ➤ ${prefix}antilink off\n│\n│  Use to enable or disable link blocking.\n│  ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy\n╰───────────────━⊷*`);
+      return m.reply(`*╭─❍『 ANTILINK USAGE 』❍\n│  ➤ ${prefix}antilink on\n│  ➤ ${prefix}antilink off\n│\n│  Use to enable or disable link blocking.\n│  ᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC\n╰───────────────━⊷*`);
     }
 
     // Toggle ON manually
@@ -35,7 +35,7 @@ const antiLink = async (m, gss) => {
 
       antilinkDB[m.from] = true;
       saveDB();
-      return m.reply(`*╭─❍『 ANTILINK 』❍\n│  ✅ Activated manually!\n│  Use ${prefix}antilink off to disable.\n│  ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy\n╰───────────────━⊷*`);
+      return m.reply(`*╭─❍『 ANTILINK 』❍\n│  ✅ Activated manually!\n│  Use ${prefix}antilink off to disable.\n│  ᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC\n╰───────────────━⊷*`);
     }
 
     // Toggle OFF
@@ -51,7 +51,7 @@ const antiLink = async (m, gss) => {
 
       delete antilinkDB[m.from];
       saveDB();
-      return m.reply(`*╭─❍『 ANTILINK 』❍\n│  ❌ Deactivated manually!\n│  Use ${prefix}antilink on to enable.\n│  ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy\n╰───────────────━⊷*`);
+      return m.reply(`*╭─❍『 ANTILINK 』❍\n│  ❌ Deactivated manually!\n│  Use ${prefix}antilink on to enable.\n│  ᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC\n╰───────────────━⊷*`);
     }
 
     // Auto-delete links (respects config.ANTILINK global toggle)
