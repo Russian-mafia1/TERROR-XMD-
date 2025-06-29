@@ -11,7 +11,7 @@
   },
   "keywords": ["hacklinkdev", "whatsapp-bot", "whatsapp md bot"],
   "author": "HACKLINK TECH.INC",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "npm:baileys-pro@0.0.5",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
