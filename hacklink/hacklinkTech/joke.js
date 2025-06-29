@@ -28,16 +28,16 @@ const ping = async (m, sock) => {
         contextInfo: {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363397722863547@newsletter',
-            newsletterName: "inconnu xd v2",
+            newsletterJid: '120363401087525436@newsletter',
+            newsletterName: "HACKLINK TECH.INC",
             serverMessageId: -1,
           },
           forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
-            title: "inconnu xd v2",
+            title: "TERROR-XMD-",
             body: "ᴘɪɴɢ sᴘᴇᴇᴅ ᴄᴀʟᴄᴜʟᴀᴛɪᴏɴs",
-            thumbnailUrl: 'https://files.catbox.moe/e1k73u.jpg', // Add thumbnail URL if required
-            sourceUrl: 'https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R', // Add source URL if necessary
+            thumbnailUrl: 'https://files.catbox.moe/zpjh78.jpg', // Add thumbnail URL if required
+            sourceUrl: 'https://whatsapp.com/channel/0029Vb6Gy5XDzgTBTarvMW1O', // Add source URL if necessary
             mediaType: 1,
             renderLargerThumbnail: false,
           },
@@ -66,16 +66,16 @@ const ping = async (m, sock) => {
           contextInfo: {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-              newsletterJid: '120363397722863547@newsletter',
-              newsletterName: "inconnu xd v2 xᴍᴅ ʙᴏᴛ",
+              newsletterJid: '120363401087525436@newsletter',
+              newsletterName: "HACKLINK TECH.INC",
               serverMessageId: -1,
             },
             forwardingScore: 999, // Score to indicate it has been forwarded
             externalAdReply: {
-              title: "inconnu xd v2",
+              title: "TERROR-XMD-",
               body: "ʜᴇʀᴇ'ʀᴇ ᴀ ᴊᴏᴋᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ʟᴀᴜɢʜ",
-              thumbnailUrl: 'https://files.catbox.moe/e1k73u.jpg', // Add thumbnail URL if required
-              sourceUrl: 'https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R', // Add source URL if necessary
+              thumbnailUrl: 'https://files.catbox.moe/zpjh78.jpg', // Add thumbnail URL if required
+              sourceUrl: 'https://whatsapp.com/channel/0029Vb6Gy5XDzgTBTarvMW1O', // Add source URL if necessary
               mediaType: 1,
               renderLargerThumbnail: false,
             },
