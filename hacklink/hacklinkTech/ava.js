@@ -1,4 +1,4 @@
-import { generateAvatar } from '../../inconnu/generateAvatar.js';
+import { generateAvatar } from '../../hacklink/generateAvatar.js';
 import config from '../../config.cjs';
 
 const avatarCmd = async (m, conn) => {
@@ -18,7 +18,7 @@ const avatarCmd = async (m, conn) => {
 ┃ 🎨 *Style:* ${style}
 ┃ 🖼️ *Avatar:* [SVG Image]
 ╰━━━━━━━━━━━━━━━━━━╯
-> © BY INCONNU XD V2
+> © BY TERROR-XMD-
 `;
 
   await conn.sendMessage(m.from, {
