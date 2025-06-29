@@ -24,14 +24,14 @@ const instagram = async (m, sock) => {
       await sock.sendMessage(m.from, {
         video: { url: data.downloadUrl },
         mimetype: "video/mp4",
-        caption: "📥 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy ✅*",
+        caption: "📥 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ TERROR-XMD- ✅*",
         contextInfo: {
           mentionedJid: [m.sender],
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363397722863547@newsletter",
-            newsletterName: "INCONNU XD V2",
+            newsletterJid: "120363401087525436@newsletter",
+            newsletterName: "HACKLINK TECH.INC",
             serverMessageId: 143,
           },
         },
