@@ -28,7 +28,7 @@ const showWallet = (m) => {
     `│ 💵 Wallet: ${wallet}\n` +
     `│ 🏦 Bank: ${bank}\n` +
     `│ ✨ Gold: ${gold}G\n` +
-    `╰────────────────╯\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+    `╰────────────────╯\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Gold Commands
@@ -37,7 +37,7 @@ const checkGold = (m) => {
   checkUserAccount(userId);
 
   const gold = goldData[userId].balance;
-  sendReply(m, `✨ ʏᴏᴜʀ ɢᴏʟᴅ ʙᴀʟᴀɴᴄᴇ: ${gold}G\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `✨ ʏᴏᴜʀ ɢᴏʟᴅ ʙᴀʟᴀɴᴄᴇ: ${gold}G\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 const earnGold = (m, amount) => {
@@ -47,14 +47,14 @@ const earnGold = (m, amount) => {
   if (amount <= 0) return sendReply(m, "❌ ᴇɴᴛᴇʀ ᴀ ᴘᴏsɪᴛɪᴠᴇ ɢᴏʟᴅ ᴀᴍᴏᴜɴᴛ.");
   
   goldData[userId].balance += amount;
-  sendReply(m, `⚡ ʏᴏᴜ ᴇᴀʀɴᴇᴅ ${amount}G ɢᴏʟᴅ!\nᴛᴏᴛᴀʟ: ${goldData[userId].balance}G\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `⚡ ʏᴏᴜ ᴇᴀʀɴᴇᴅ ${amount}G ɢᴏʟᴅ!\nᴛᴏᴛᴀʟ: ${goldData[userId].balance}G\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Balance Command
 const checkBalance = (m) => {
   const userId = m.sender;
   checkUserAccount(userId);
-  sendReply(m, `╔════◇\n║ *INCONNU XD ECONOMY*\n║ 💵 *Balance:* ${formatCurrency(economyData[userId].balance)}\n║ 🥳 Enjoy!\n╚════════════╝\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `╔════◇\n║ *TERROR-XMD- ECONOMY*\n║ 💵 *Balance:* ${formatCurrency(economyData[userId].balance)}\n║ 🥳 Enjoy!\n╚════════════╝\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Earn Money
@@ -65,7 +65,7 @@ const earnMoney = (m, amount) => {
   if (amount <= 0) return sendReply(m, "❌ Please provide a valid positive amount.");
 
   economyData[userId].balance += amount;
-  sendReply(m, `✅ You earned ${formatCurrency(amount)}!\n💰 New Balance: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `✅ You earned ${formatCurrency(amount)}!\n💰 New Balance: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Spend
@@ -77,7 +77,7 @@ const spendMoney = (m, amount) => {
   if (economyData[userId].balance < amount) return sendReply(m, `🚫 Not enough funds. Balance: ${formatCurrency(economyData[userId].balance)}`);
 
   economyData[userId].balance -= amount;
-  sendReply(m, `🧾 You spent ${formatCurrency(amount)}.\n💰 New Balance: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `🧾 You spent ${formatCurrency(amount)}.\n💰 New Balance: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Deposit
@@ -90,7 +90,7 @@ const depositMoney = (m, amount) => {
   economyData[userId].balance -= amount;
   bankData[userId].balance += amount;
 
-  sendReply(m, `🏦 Deposited ${formatCurrency(amount)} to bank.\n💼 New Wallet: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `🏦 Deposited ${formatCurrency(amount)} to bank.\n💼 New Wallet: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Withdraw
@@ -103,7 +103,7 @@ const withdrawMoney = (m, amount) => {
   bankData[userId].balance -= amount;
   economyData[userId].balance += amount;
 
-  sendReply(m, `💸 Withdrawn ${formatCurrency(amount)} from bank.\n💼 Wallet: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `💸 Withdrawn ${formatCurrency(amount)} from bank.\n💼 Wallet: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Transfer
@@ -117,7 +117,7 @@ const transferMoney = (m, amount, recipientId) => {
   economyData[userId].balance -= amount;
   economyData[recipientId].balance += amount;
 
-  sendReply(m, `🤝 Transferred ${formatCurrency(amount)} to ${recipientId}.\n🪙 New Balance: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `🤝 Transferred ${formatCurrency(amount)} to ${recipientId}.\n🪙 New Balance: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Daily Reward
@@ -140,7 +140,7 @@ const claimDaily = (m) => {
   economyData[userId].balance += reward;
   lastClaimedDaily[userId] = now;
 
-  sendReply(m, `🎁 Daily reward: ${formatCurrency(reward)}\n💰 New Balance: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `🎁 Daily reward: ${formatCurrency(reward)}\n💰 New Balance: ${formatCurrency(economyData[userId].balance)}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Leaderboard
@@ -149,7 +149,7 @@ const showLeaderboard = (m) => {
   if (sorted.length === 0) return sendReply(m, "No data yet.");
 
   const board = sorted.map(([uid, { balance }], i) => `${i + 1}. ${uid}: ${formatCurrency(balance)}`).join("\n");
-  sendReply(m, `🏆 ᴛᴏᴘ 5 ᴜsᴇʀs:\n${board}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`);
+  sendReply(m, `🏆 ᴛᴏᴘ 5 ᴜsᴇʀs:\n${board}\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`);
 };
 
 // Command handler
