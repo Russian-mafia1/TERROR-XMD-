@@ -21,7 +21,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
     }
 
     imdbt += "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n";
-    imdbt += " ```*🚀 INCONNU-XD-V2 MOVIES*```\n";
+    imdbt += " ```*🚀 TERROR-XMD-MOVIES*```\n";
     imdbt += "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n";
     imdbt += `🎬Title      : ${fids.data.Title}\n`;
     imdbt += `📅Year       : ${fids.data.Year}\n`;
