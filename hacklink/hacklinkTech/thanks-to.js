@@ -9,10 +9,10 @@ const thanksCommand = async (m, Matrix) => {
 
     const message = `
 ╭─❏ *DEVELOPER:*
-│👨‍💻 DEV : *©INCONNU BOY*
-│👨‍💻 NUM : +554488138425
+│👨‍💻 DEV : *©HACKLINK TECH.INC*
+│👨‍💻 NUM : +254769677305
 │───────────────────
-│🛠️ *BOT:*INCONNU XD V2*
+│🛠️ *BOT:*TERROR-XMD-*
 │───────────────────
 │🙋‍♂️ HELLO @${m.sender.split("@")[0]}
 ╰──────────────────❏
@@ -20,15 +20,15 @@ const thanksCommand = async (m, Matrix) => {
 
     try {
         await Matrix.sendMessage(m.from, {
-            image: { url: 'https://files.catbox.moe/e1k73u.jpg' },
+            image: { url: 'https://files.catbox.moe/m9ox7r.jpg' },
             caption: message,
             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 1000,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363397722863547@newsletter', // optional
-                    newsletterName: 'INCONNU XD V2',
+                    newsletterJid: '120363401087525436@newsletter', // optional
+                    newsletterName: 'HACKLINK TECH.INC',
                     serverMessageId: 143
                 }
             }
