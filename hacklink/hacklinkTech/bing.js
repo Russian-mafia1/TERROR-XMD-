@@ -21,13 +21,13 @@ const bingHandler = async (m, sock) => {
 
     await sock.sendMessage(m.key.remoteJid, {
       image: { url: imageurl },
-      caption: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy`,
+      caption: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC`,
       contextInfo: {
         externalAdReply: {
           title: title,
-          body: "ᴘʟᴀʏɪɴɢ ᴠɪᴀ inconnu xd v2",
+          body: "ᴘʟᴀʏɪɴɢ ᴠɪᴀ TERROR-XMD-",
           thumbnailUrl: imageurl,
-          sourceUrl: 'https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R',
+          sourceUrl: 'https://whatsapp.com/channel/0029Vb6Gy5XDzgTBTarvMW1O',
           mediaType: 1,
           renderLargerThumbnail: false
         }
