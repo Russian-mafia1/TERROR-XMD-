@@ -11,7 +11,7 @@ const demonContext = {
   isForwarded: true,
   forwardedNewsletterMessageInfo: {
     newsletterJid: '120363401087525436@newsletter',
-    newsletterName: "HACKLINK",
+    newsletterName: "HACKLINK TECH.INC",
     serverMessageId: 143
   }
 };
@@ -84,7 +84,7 @@ const AntiDelete = async (m, Matrix) => {
   if (m.body.toLowerCase() === `${prefix}antidelete on` || m.body.toLowerCase() === `${prefix}antidelete off`) {
     const responses = {
       on: {
-        text: `*HACKLINK-XD Anti-Delete Activated!*\n\n` +
+        text: `*TERROR-XMD- Anti-Delete Activated!*\n\n` +
               `• Status: ✅ Enabled\n` +
               `• Cache: 🕒 5 minutes\n` +
               `• Mode: 🌐 Global\n\n` +
@@ -94,7 +94,7 @@ const AntiDelete = async (m, Matrix) => {
         contextInfo: demonContext
       },
       off: {
-        text: `HACKLINK-XD  Anti-Delete Deactivated!*\n\n` +
+        text: `TERROR-XMD-  Anti-Delete Deactivated!*\n\n` +
               `• Status: ❌ Disabled\n\n` +
               `_Message recovery disabled_\n\n` +
               `━━━━━━⊱✿⊰━━━━━━\n` +
