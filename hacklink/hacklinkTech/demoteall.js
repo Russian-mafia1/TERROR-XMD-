@@ -24,7 +24,7 @@ const demoteAll = async (m, gss) => {
     if (toDemote.length === 0) return m.reply("*✅ NO OTHER ADMINS TO DEMOTE.*");
 
     await gss.groupParticipantsUpdate(m.from, toDemote, 'demote');
-    m.reply(`*✅ ${toDemote.length} ADMINS DEMOTED SUCCESSFULLY IN ${groupMetadata.subject}*\n\n_© BY INCONNU XD V2_`);
+    m.reply(`*✅ ${toDemote.length} ADMINS DEMOTED SUCCESSFULLY IN ${groupMetadata.subject}*\n\n_© BY TERROR-XMD-_`);
   } catch (err) {
     console.error('DemoteAll Error:', err);
     m.reply('An error occurred while trying to demote all members.');
