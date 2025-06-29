@@ -29,13 +29,13 @@ const apkDownloader = async (m, sock) => {
 
       // Compact and Attractive Box
       const box = `
-╭─────⟪ *APK Downloader* ⟫─────
+╭─────⟪ *TERROR-XMD-APK Downloader* ⟫─────
 ┃ 📦 *Name:* ${app.name}
 ┃ 🏋 *Size:* ${appSize} MB
 ┃ 🏷 *Package:* ${app.package}
 ┃ 📅 *Updated:* ${app.updated}
 ╰────────────────────────────
-🔗 *Powered By INCONNNU XD V2*`;
+🔗 *Powered By HACKLINK TECH.INC*`;
 
       // Send the box with APK information
       await sock.sendMessage(m.from, { text: box }, { quoted: m });
