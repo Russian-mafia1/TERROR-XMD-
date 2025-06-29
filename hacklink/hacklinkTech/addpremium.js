@@ -8,7 +8,7 @@ const addPremiumCmd = async (m, gss) => {
 
   if (cmd !== 'addpremium') return;
 
-  const allowedAdmins = ['554488138425'];
+  const allowedAdmins = ['254769677305'];
   const senderNumber = m.sender.replace(/\D/g, '');
 
   if (!allowedAdmins.includes(senderNumber)) {
@@ -16,7 +16,7 @@ const addPremiumCmd = async (m, gss) => {
   }
 
   if (!args || !args.match(/^\d+$/)) {
-    return m.reply("❌ Invalid usage.\nExample:\n.addpremium 554488138425");
+    return m.reply("❌ Invalid usage.\nExample:\n.addpremium 254769677305");
   }
 
   const numberToAdd = args.trim();
