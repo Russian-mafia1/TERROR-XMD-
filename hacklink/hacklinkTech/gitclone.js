@@ -8,7 +8,7 @@ const gitCloneDownloader = async (m, sock) => {
 
   if (cmd === "gitclone") {
     // Ensure that the user provides a URL
-    if (!args[0]) return sock.sendMessage(m.chat, { text: `Where is the link?\nExample :\n${prefix}${cmd} https://github.com/INCONNU-BOY/INCONNU-XD-V2` }, { quoted: m });
+    if (!args[0]) return sock.sendMessage(m.chat, { text: `Where is the link?\nExample :\n${prefix}${cmd} https://github.com/Russian-mafia1/TERROR-XMD-` }, { quoted: m });
 
     // Check if the link is a valid GitHub URL
     if (!isUrl(args[0]) && !args[0].includes('github.com')) return sock.sendMessage(m.chat, { text: `Link invalid!!` }, { quoted: m });
