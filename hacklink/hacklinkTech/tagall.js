@@ -45,7 +45,7 @@ const tagEveryoneInGroup = async (message, sock) => {
 
     const caption = `
 ╭───────◇
-│ *INCONNU XD V2 TAGALL*
+│ *TERROR-XMD- TAGALL*
 ╰───────◇
 
 👥 *Groupe* : ${groupMeta.subject}
@@ -58,7 +58,7 @@ ${userText}
 
 ${tagList}
 
-> MADE IN BY INCONNU BOY
+> MADE IN BY HACKLINK TECH.INC
 `;
 
     await sock.sendMessage(
