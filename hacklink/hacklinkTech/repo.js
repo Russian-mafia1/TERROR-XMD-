@@ -9,18 +9,18 @@ const repo = async (m, sock) => {
 
   if (cmd === "repo") {
     await m.React('🚀');
-    const repoUrl = 'https://github.com/INCONNU-BOY/INCONNU-XD-V2';
-    const imageUrl = 'https://files.catbox.moe/e1k73u.jpg';
+    const repoUrl = 'https://github.com/Russian-mafia1/TERROR-XMD-';
+    const imageUrl = 'https://files.catbox.moe/zpjh78.jpg';
 
     try {
-      const apiUrl = `https://api.github.com/repos/INCONNU-BOY/INCONNU-XD-V2`;
+      const apiUrl = `https://api.github.com/repos/Russian-mafia1/TERROR-XMD-`;
       const response = await fetch(apiUrl);
       const data = await response.json();
 
       if (data && data.forks_count !== undefined && data.stargazers_count !== undefined) {
         const menuText = `
 ⭓──────────────────⭓
- 💎 *INCONNU-XD V2* 💎
+ 💎 *TERROR-XMD-* 💎
 ⭓──────────────────⭓
 
 🌐 *Official GitHub:*
@@ -37,10 +37,10 @@ const repo = async (m, sock) => {
 ⭓ Easy to Deploy & Maintain
 
 🎥 *Tutorial & Setup Guide:*
-📺 https://www.youtube.com/@inconnuboytech-s1s
+📺 *not available*
 
 ⭓──────────────────⭓
-  BUILT BY INCONNU BOY 
+  BUILT BY HACKLINK TECH.INC
 ⭓──────────────────⭓
         `.trim();
 
@@ -51,8 +51,8 @@ const repo = async (m, sock) => {
             forwardingScore: 5,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-              newsletterName: "INCONNU-XD-V2",
-              newsletterJid: "120363397722863547@newsletter",
+              newsletterName: "HACKLINK TECH.INC",
+              newsletterJid: "120363401087525436@newsletter",
             },
           },
         }, { quoted: m });
