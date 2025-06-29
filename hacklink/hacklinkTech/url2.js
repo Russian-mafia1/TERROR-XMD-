@@ -69,7 +69,7 @@ const tourl = async (m, sock) => {
       }
 
       const mediaUrl = response.data.data.link;
-      const responseText = `*inconnu xᴅ v2 ᴜʀʟ ᴍᴇɴᴜ*\n\n*URL:* ${mediaUrl}\n\n*ᴋᴇᴇᴘ ᴜsɪɴɢ  inconnu xᴅ v2*`;
+      const responseText = `*TERROR-XMD- ᴜʀʟ ᴍᴇɴᴜ*\n\n*URL:* ${mediaUrl}\n\n*ᴋᴇᴇᴘ ᴜsɪɴɢ  inconnu xᴅ v2*`;
 
       await sock.sendMessage(
         m.from,
