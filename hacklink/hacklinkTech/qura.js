@@ -23,7 +23,7 @@ const quranMedia = async (m, gss) => {
 ┃━━━━━━━━━━━━━━━━━━━
 ┃  *“A sound heart starts with divine verses.”*
 ┃
-┃  🌀 *Inconnu xd Exclusive Drop*
+┃  🌀 *TERROR-XMD- Exclusive Drop*
 ┃  🧠 Mind • ✨ Soul • ❤️ Peace
 ┗━━━━━━━━━━━━━━━━━━━┛`,
       },
