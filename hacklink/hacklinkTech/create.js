@@ -29,10 +29,10 @@ const createGroup = async (m, Matrix) => {
 ┃     ↪ Creates a group and adds members
 ┃
 ┃📍 *Examples:*
-┃▪ ${prefix}create INCONNU XD 
-┃▪ ${prefix}create INCONNU XD add 2299001122,2298123456
+┃▪ ${prefix}create TERROR-XMD- 
+┃▪ ${prefix}create TERROR-XMD- add 2299001122,2298123456
 ┃
-╰━━━〔 © INCONNU XD V2 〕━━⬣
+╰━━━〔 © TERROR-XMD- 〕━━⬣
       `.trim()
     }, { quoted: m });
   }
@@ -64,7 +64,7 @@ const createGroup = async (m, Matrix) => {
 ⬡ *Group ID:* ${newGroupJid}
 ⬡ *Members added:* ${numbersToAdd.length > 0 ? numbersToAdd.length : "None"}
 
-> MADE IN BY INCONNU XD V2 
+> MADE IN BY TERROR-XMD-
       `.trim()
     }, { quoted: m });
 
