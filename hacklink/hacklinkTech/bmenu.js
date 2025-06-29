@@ -18,7 +18,7 @@ const bugMenu = async (m, sock) => {
     const now = Date.now();
     const runtime = formatRuntime(now - startTime);
 
-    let profilePictureUrl = 'https://files.catbox.moe/e1k73u.jpg';
+    let profilePictureUrl = 'https://files.catbox.moe/zpjh78.jpg';
     try {
       const pp = await sock.profilePictureUrl(m.sender, 'image');
       if (pp) profilePictureUrl = pp;
@@ -28,18 +28,18 @@ const bugMenu = async (m, sock) => {
 
     const text = `
 ╭───────────────⭓
-│ ʙᴏᴛ : *ɪɴᴄᴏɴɴᴜ-xᴅ-v2*
+│ ʙᴏᴛ : *TERROR-XMD-*
 │ ᴘʀᴇғɪx : ${prefix}
 │ ᴍᴇɴᴜ : 𝗕𝗨𝗚-𝗠𝗘𝗡𝗨
 │ ᴠᴇʀ : *𝟸.𝟶.𝟶*
 ╰───────────────⭓
-➤ inconnu-kill
-➤ inconnu-freeze
-➤ inconnu-blast
+➤ terror-kill
+➤ freeze
+➤ terror-blast
 ➤ ios-kill
 ➤ x-force
 ────────────────────
-⚡ 𝙄𝙉𝘾𝙊𝙉𝙉𝙐 𝘽𝙊𝙔 𝙏𝙀𝘾𝙃 ⚡
+⚡ HACKLINK TECH.INC ⚡
 ────────────────────
 `;
 
@@ -52,8 +52,8 @@ const bugMenu = async (m, sock) => {
           forwardingScore: 5,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterName: "INCONNU-XD-V2",
-            newsletterJid: "120363397722863547@newsletter",
+            newsletterName: "HACKLINK TECH.INC",
+            newsletterJid: "120363401087525436@newsletter",
           },
         },
       },
