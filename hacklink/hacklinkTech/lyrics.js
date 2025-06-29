@@ -15,7 +15,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
     try {
       await m.React('🕘');
-      await m.reply('A moment, *🚀 INCONNU-XD-V2* is generating your lyrics request...');
+      await m.reply('A moment, *🚀 TERROR-XMD-* is generating your lyrics request...');
 
       if (!text.includes('|')) {
         return m.reply('Please provide the song name and artist name separated by a "|", for example: Spectre|Alan Walker.');
@@ -45,8 +45,8 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
           {
             name: "cta_url",
             buttonParamsJson: JSON.stringify({
-              display_text: "INCONNU TECH CHANNEL",
-              url: `https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R`
+              display_text: "HACKLINK TECH.INC CHANNEL",
+              url: `https://whatsapp.com/channel/0029Vb6Gy5XDzgTBTarvMW1O`
             })
           },
           {
@@ -70,7 +70,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
                   text: lyrics
                 }),
                 footer: proto.Message.InteractiveMessage.Footer.create({
-                  text: "> *© 🚀 INCONNU-XD-V2*"
+                  text: "> *© 🚀 TERROR-XMD-*"
                 }),
                 header: proto.Message.InteractiveMessage.Header.create({
                   title: "",
