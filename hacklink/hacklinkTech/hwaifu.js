@@ -6,7 +6,7 @@ const sendImage = async (m, sock, imageUrl, caption) => {
   try {
     await sock.sendMessage(m.from, {
       image: { url: imageUrl },
-      caption: caption + '\n\n> MADE BY INCONNU XD V2',
+      caption: caption + '\n\n> MADE BY TERROR-XMD-',
     });
     await m.React('✅');
   } catch (error) {
