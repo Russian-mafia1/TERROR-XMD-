@@ -1,7 +1,5 @@
 import config from '../../config.cjs';
 
-const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
 const ping = async (m, sock) => {
   const prefix = config.PREFIX;
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
@@ -10,22 +8,15 @@ const ping = async (m, sock) => {
     const start = new Date().getTime();
     await m.React('⚡');
 
-    // Effet rapide lettre par lettre
-    const letters = ['P', 'I', 'N', 'G'];
-    let text = '';
-    for (const l of letters) {
-      text += l + ' ';
-      await sock.sendMessage(m.from, { text: `*${text.trim()}*` }, { quoted: m });
-      await delay(200); // délai court (0.2s)
-    }
-
-    // Calcul du temps de réponse
+    // Send a message and measure the response time
+    const messageSentTime = new Date().getTime();
+    await sock.sendMessage(m.from, { text: '*Checking ping...*' }, { quoted: m });
     const end = new Date().getTime();
-    const pingTime = (end - start) / 1000;
+    const pingTime = (end - messageSentTime) / 1000;
 
     // Message final stylisé
     const result = `
-╭──〔 *INCONNU-XD V2* 〕─╮
+╭──〔 *TERROR-XMD-* 〕─╮
 │  
 │  ✦ Response Time: *${pingTime.toFixed(3)}s*
 │  ✦ Server: ✅ Online
@@ -37,12 +28,12 @@ const ping = async (m, sock) => {
       text: result,
       contextInfo: {
         externalAdReply: {
-          title: 'INCONNU-XD V2',
+          title: 'TERROR-XMD-',
           mediaType: 1,
           previewType: 0,
           renderLargerThumbnail: true,
-          thumbnailUrl: 'https://telegra.ph/file/28ff0200f58c619244264.jpg', // tu peux changer ça
-          sourceUrl: 'https://github.com/INCONNU-BOY/INCONNU-XD-V2'
+          thumbnailUrl: 'https://files.catbox.moe/zpjh78.jpg', 
+          sourceUrl: 'https://github.com/Russian-mafia1/TERROR-XMD-'
         }
       }
     }, { quoted: m });
