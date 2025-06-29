@@ -23,7 +23,7 @@ const ppcoupleCmd = async (m, sock) => {
   }
 
   const random = data[Math.floor(Math.random() * data.length)];
-  const caption = 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy';
+  const caption = 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC';
 
   try {
     await sock.sendMessage(m.from, {
@@ -31,10 +31,10 @@ const ppcoupleCmd = async (m, sock) => {
       caption: `for 👦 Male`,
       contextInfo: {
         externalAdReply: {
-          title: "inconnu xᴅ v2",
+          title: "TERROR-XMD-",
           body: caption,
-          thumbnailUrl: 'https://files.catbox.moe/e1k73u.jpg',
-          sourceUrl: 'https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R',
+          thumbnailUrl: 'https://files.catbox.moe/zpjh78.jpg',
+          sourceUrl: 'https://whatsapp.com/channel/0029Vb6Gy5XDzgTBTarvMW1O',
           mediaType: 1,
           renderLargerThumbnail: false
         }
@@ -46,10 +46,10 @@ const ppcoupleCmd = async (m, sock) => {
       caption: `for 👧 Female`,
       contextInfo: {
         externalAdReply: {
-          title: "inconnu xᴅ v2",
+          title: "TERROR-XMD-",
           body: caption,
-          thumbnailUrl: 'https://files.catbox.moe/e1k73u.jpg',
-          sourceUrl: 'https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R',
+          thumbnailUrl: 'https://files.catbox.moe/zpjh78.jpg',
+          sourceUrl: 'https://whatsapp.com/channel/0029Vb6Gy5XDzgTBTarvMW1O',
           mediaType: 1,
           renderLargerThumbnail: false
         }
