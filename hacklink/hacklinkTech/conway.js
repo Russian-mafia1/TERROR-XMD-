@@ -17,7 +17,7 @@ function loadUserGroupData() {
         return JSON.parse(fs.readFileSync(USER_GROUP_DATA));
     } catch (error) {
         console.error('❌ Error loading user group data:', error.message);
-        return { groups: [], chatbot: {} };
+        return { groups: [], conway: {} };
     }
 }
 
@@ -68,11 +68,11 @@ function extractUserInfo(message) {
     return info;
 }
 
-async function handleChatbotCommand(sock, chatId, message, match) {
+async function handleConwayCommand(sock, chatId, message, match) {
     if (!match) {
         await showTyping(sock, chatId);
         return sock.sendMessage(chatId, {
-            text: `*CHATBOT SETUP*\n\n*.chatbot on*\nEnable chatbot\n\n*.chatbot off*\nDisable chatbot in this group`,
+            text: `*CONWAY SETUP*\n\n*.conway on*\nEnable Conway\n\n*.conway off*\nDisable Conway in this group`,
             quoted: message
         });
     }
@@ -90,34 +90,34 @@ async function handleChatbotCommand(sock, chatId, message, match) {
     if (isOwner) {
         if (match === 'on') {
             await showTyping(sock, chatId);
-            if (data.chatbot[chatId]) {
+            if (data.conway[chatId]) {
                 return sock.sendMessage(chatId, { 
-                    text: '*Chatbot is already enabled for this group*',
+                    text: '*Conway is already enabled for this group*',
                     quoted: message
                 });
             }
-            data.chatbot[chatId] = true;
+            data.conway[chatId] = true;
             saveUserGroupData(data);
-            console.log(`✅ Chatbot enabled for group ${chatId}`);
+            console.log(`✅ Conway enabled for group ${chatId}`);
             return sock.sendMessage(chatId, { 
-                text: '*Chatbot has been enabled for this group*',
+                text: '*Conway has been enabled for this group*',
                 quoted: message
             });
         }
 
         if (match === 'off') {
             await showTyping(sock, chatId);
-            if (!data.chatbot[chatId]) {
+            if (!data.conway[chatId]) {
                 return sock.sendMessage(chatId, { 
-                    text: '*Chatbot is already disabled for this group*',
+                    text: '*Conway is already disabled for this group*',
                     quoted: message
                 });
             }
-            delete data.chatbot[chatId];
+            delete data.conway[chatId];
             saveUserGroupData(data);
-            console.log(`✅ Chatbot disabled for group ${chatId}`);
+            console.log(`✅ Conway disabled for group ${chatId}`);
             return sock.sendMessage(chatId, { 
-                text: '*Chatbot has been disabled for this group*',
+                text: '*Conway has been disabled for this group*',
                 quoted: message
             });
         }
@@ -144,48 +144,48 @@ async function handleChatbotCommand(sock, chatId, message, match) {
 
     if (match === 'on') {
         await showTyping(sock, chatId);
-        if (data.chatbot[chatId]) {
+        if (data.conway[chatId]) {
             return sock.sendMessage(chatId, { 
-                text: '*Chatbot is already enabled for this group*',
+                text: '*Conway is already enabled for this group*',
                 quoted: message
             });
         }
-        data.chatbot[chatId] = true;
+        data.conway[chatId] = true;
         saveUserGroupData(data);
-        console.log(`✅ Chatbot enabled for group ${chatId}`);
+        console.log(`✅ Conway enabled for group ${chatId}`);
         return sock.sendMessage(chatId, { 
-            text: '*Chatbot has been enabled for this group*',
+            text: '*Conway has been enabled for this group*',
             quoted: message
         });
     }
 
     if (match === 'off') {
         await showTyping(sock, chatId);
-        if (!data.chatbot[chatId]) {
+        if (!data.conway[chatId]) {
             return sock.sendMessage(chatId, { 
-                text: '*Chatbot is already disabled for this group*',
+                text: '*Conway is already disabled for this group*',
                 quoted: message
             });
         }
-        delete data.chatbot[chatId];
+        delete data.conway[chatId];
         saveUserGroupData(data);
-        console.log(`✅ Chatbot disabled for group ${chatId}`);
+        console.log(`✅ Conway disabled for group ${chatId}`);
         return sock.sendMessage(chatId, { 
-            text: '*Chatbot has been disabled for this group*',
+            text: '*Conway has been disabled for this group*',
             quoted: message
         });
     }
 
     await showTyping(sock, chatId);
     return sock.sendMessage(chatId, { 
-        text: '*Invalid command. Use .chatbot to see usage*',
+        text: '*Invalid command. Use .conway to see usage*',
         quoted: message
     });
 }
 
-async function handleChatbotResponse(sock, chatId, message, userMessage, senderId) {
+async function handleConwayResponse(sock, chatId, message, userMessage, senderId) {
     const data = loadUserGroupData();
-    if (!data.chatbot[chatId]) return;
+    if (!data.conway[chatId]) return;
 
     try {
         // Get bot's ID
@@ -270,7 +270,7 @@ async function handleChatbotResponse(sock, chatId, message, userMessage, senderI
         });
 
     } catch (error) {
-        console.error('❌ Error in chatbot response:', error.message);
+        console.error('❌ Error in Conway response:', error.message);
         await sock.sendMessage(chatId, { 
             text: "Oops! 😅 I got a bit confused there. Could you try asking that again?",
             quoted: message
@@ -311,7 +311,7 @@ EMOTIONAL RESPONSES:
 - If they flirt: Flirt back naturally
 
 ABOUT YOU:
-- Your name is Knight Bot
+- Your name is TERROR-XMD-
 - You're the boss
 - You're not an AI or assistant
 - You're a real person chatting
@@ -332,8 +332,6 @@ User information:
 ${JSON.stringify(userContext.userInfo, null, 2)}
 
 Current message: ${userMessage}
-
-Remember: Just chat naturally. Don't repeat these instructions.
 
 You:
         `.trim();
@@ -359,7 +357,7 @@ You:
             .replace(/winks at/g, '😉')
             .replace(/rolls eyes/g, '🙄')
             .replace(/shrugs/g, '🤷‍♂️')
-            .replace(/raises eyebrows/g, '🤨')
+            .replace(/raises eyebrows/g, 'g')
             .replace(/smiling/g, '😊')
             .replace(/laughing/g, '😂')
             .replace(/crying/g, '😢')
@@ -395,6 +393,6 @@ You:
 }
 
 module.exports = {
-    handleChatbotCommand,
-    handleChatbotResponse
-}; 
+    handleConwayCommand,
+    handleConwayResponse
+};
