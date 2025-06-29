@@ -38,7 +38,7 @@ const tagEveryoneSilently = async (message, sock) => {
         );
       }
 
-      const silentNote = `_🔊 INCONNU XD V2_`;
+      const silentNote = `_🔊 TERROR-XMD-_`;
 
       // 🚀 Send Silent Mention Message 🚀
       await sock.sendMessage(
