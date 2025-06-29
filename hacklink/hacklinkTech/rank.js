@@ -50,16 +50,16 @@ const rank = async (m, sock) => {
         contextInfo: {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363397722863547@newsletter',
-            newsletterName: "INCONNU XD V2",
+            newsletterJid: '120363401087525436@newsletter',
+            newsletterName: "HACKLINK TECH.INC",
             serverMessageId: -1,
           },
           forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
-            title: "INCONNU XD V2",
-            body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy",
-            thumbnailUrl: 'https://files.catbox.moe/e1k73u.jpg', // Add thumbnail URL if required
-            sourceUrl: 'https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R', // Add source URL if necessary
+            title: "TERROR-XMD-",
+            body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC",
+            thumbnailUrl: 'https://files.catbox.moe/zpjh78.jpg', // Add thumbnail URL if required
+            sourceUrl: 'https://whatsapp.com/channel/0029Vb6Gy5XDzgTBTarvMW1O', // Add source URL if necessary
             mediaType: 1,
             renderLargerThumbnail: true,
           },
