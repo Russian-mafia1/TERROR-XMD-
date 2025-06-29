@@ -63,7 +63,7 @@ const fancy = async (m, sock) => {
   let text = '';
 
   if (args.length === 0) {
-    text = 'INCONNU XD V2';
+    text = 'TERROR-XMD-';
   } else if (!isNaN(args[0])) {
     index = parseInt(args[0]) - 1;
     text = args.slice(1).join(' ');
@@ -82,7 +82,7 @@ const fancy = async (m, sock) => {
     const styledText = stylizeText(text, style);
 
     return sock.sendMessage(m.from, {
-      text: `🎨 *${name}*\n\n${styledText}\n\n> MADE IN BY INCONNU BOY`,
+      text: `🎨 *${name}*\n\n${styledText}\n\n> MADE IN BY HACKLINK TECH.INC`,
     }, { quoted: m });
   }
 
@@ -92,7 +92,7 @@ const fancy = async (m, sock) => {
     .join('\n\n');
 
   await sock.sendMessage(m.from, {
-    text: `✨ *Fancy Styles for:* _${text}_\n\n${allStyles}\n\n👑 MADE IN BY INCONNU BOY`,
+    text: `✨ *Fancy Styles for:* _${text}_\n\n${allStyles}\n\n👑 MADE IN BY HACKLINK TECH.INC`,
   }, { quoted: m });
 };
 
