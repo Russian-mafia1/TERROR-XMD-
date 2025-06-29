@@ -22,7 +22,7 @@ const commands = async (sock, m, args) => {
     const thumbnail = media.find(item => item.type === 'Thumbnail');
     const mediaType = video ? 'Video' : 'Image';
 
-    const caption = `╭━━━〔 *INCONNU-XD-PIN DL* 〕━━━┈⊷
+    const caption = `╭━━━〔 *TERROR-XMD-PIN DL* 〕━━━┈⊷
 ┃▸╭──────────────
 ┃▸┃๏ *Pinterest Downloader*
 ┃▸└──────────────···๏
@@ -32,7 +32,7 @@ const commands = async (sock, m, args) => {
 ┇๏ *Description* : ${description || 'No description'}
 ┇๏ *Media Type* : ${mediaType}
 ╰━━❑━⪼
-> *© Powered by INCONNU XD V2*`;
+> *© Powered by TERROR-XMD-*`;
 
     if (video) {
       await sock.sendMessage(m.chat, { video: { url: video.download_url }, caption }, { quoted: m });
