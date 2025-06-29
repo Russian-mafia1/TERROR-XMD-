@@ -8,7 +8,7 @@ const tiktokdl = async (m, sock) => {
   const reply = (text) => sock.sendMessage(m.from, { text }, { quoted: m });
 
   if (cmd === "tiktokdl" || cmd === "tiktok") {
-    if (!q) return reply(`✨ inconnu xd sᴀʏs ʏᴏᴜ sʜᴏᴜʟᴅ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴛɪᴋᴛᴏᴋ ʟɪɴᴋ. Example: ${prefix}${cmd} https://vm.tiktok.com/xxxx/ ✨`);
+    if (!q) return reply(`✨ TERROR-XMD- sᴀʏs ʏᴏᴜ sʜᴏᴜʟᴅ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴛɪᴋᴛᴏᴋ ʟɪɴᴋ. Example: ${prefix}${cmd} https://vm.tiktok.com/xxxx/ ✨`);
     if (!q.includes("tiktok.com")) return reply("⚠️ That doesn't look like a valid TikTok link.");
 
     await reply("🚀 Initiating download... Please be patient! ⏳");
@@ -32,7 +32,7 @@ const tiktokdl = async (m, sock) => {
                       `❤️ **Likes:** ${like}\n` +
                       `💬 **Comments:** ${comment}\n` +
                       `🔗 **Share:** ${share}\n\n` +
-                      `ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy! 😉`;
+                      `ᴘᴏᴡᴇʀᴇᴅ ʙʏ HACKLINK TECH.INC! 😉`;
 
       await sock.sendMessage(m.from, {
         video: { url: videoUrl },
