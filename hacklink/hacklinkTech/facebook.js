@@ -80,10 +80,10 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `*INCONNU XD FACEBOOK POST DOWNLOADER*\n\n> *TITLE*: ${fbData.title}`
+                text: `*TERROR-XMD- FACEBOOK POST DOWNLOADER*\n\n> *TITLE*: ${fbData.title}`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "©INCONNU BOY"
+                text: "©HACKLINK TECH.INC"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: fbData.thumbnail } }, { upload: Matrix.waUploadToServer })),
@@ -146,7 +146,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
             content = { 
               video: finalMediaBuffer, 
               mimetype: 'video/mp4', 
-              caption: '> © INCONNU BOY',
+              caption: '> © HACKLINK TECH.INC',
             };
             await Matrix.sendMessage(m.from, content, { quoted: m });
           } else {
