@@ -56,7 +56,7 @@ const deepseek = async (m, Matrix) => {
     const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
     const prompt = m.body.slice(prefix.length + cmd.length).trim();
 
-    const validCommands = ['inconnu-ai'];
+    const validCommands = ['hacklink'];
 
     if (validCommands.includes(cmd)) {
         if (!prompt) {
