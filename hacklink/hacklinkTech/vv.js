@@ -11,7 +11,7 @@ const OwnerCmd = async (m, Matrix) => {
   const isOwner = m.sender === ownerNumber;
   const isBot = m.sender === botNumber;
 
-  if (!['vv', 'vv2', 'vv3'].includes(cmd)) return;
+  if (!['👀', 'vv2', 'vv3'].includes(cmd)) return;
   if (!m.quoted) return m.reply('*Reply to a View Once message!*');
 
   let msg = m.quoted.message;
@@ -21,7 +21,7 @@ const OwnerCmd = async (m, Matrix) => {
   if (!msg) return m.reply('*This is not a View Once message!*');
 
   // VV2 & VV3 only for Owner/Bot
-  if (['vv2', 'vv3'].includes(cmd) && !isOwner && !isBot) {
+  if (['👀', 'vv3'].includes(cmd) && !isOwner && !isBot) {
     return m.reply('*Only the owner or bot can use this command!*');
   }
 
@@ -42,12 +42,12 @@ const OwnerCmd = async (m, Matrix) => {
     if (!buffer) return m.reply(' *Failed to retrieve media!*');
 
     let mimetype = msg.audioMessage?.mimetype || 'audio/ogg';
-    let caption = ` _DOWNLOAD VIEW ONCE BY INCONNU-XD_`;
+    let caption = ` _DOWNLOAD VIEW ONCE BY TERROR-XMD-`;
 
     let recipient;
     if (cmd === 'vv') {
       recipient = m.from; // Same chat, restricted to Owner/Bot only
-    } else if (cmd === 'vv2') {
+    } else if (cmd === '👀') {
       recipient = botNumber; // ✅ Bot inbox
     } else if (cmd === 'vv3') {
       recipient = ownerNumber; // ✅ Owner inbox
