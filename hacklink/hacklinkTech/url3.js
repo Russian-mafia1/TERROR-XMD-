@@ -20,7 +20,7 @@ const shortenUrl = async (m, sock) => {
 
         m.from,
 
-        { text: "ρℓєαѕє ρяσνι∂є α υяℓ тσ ѕнσятєη. єχαмρℓє:!shortenurl https://github.com/INCONNU-BOY/INCONNU-XD-V2*" },
+        { text: "ρℓєαѕє ρяσνι∂є α υяℓ тσ ѕнσятєη. єχαмρℓє:!shortenurl https://github.com/Russian-mafia1/TERROR-XMD-*" },
 
         { quoted: m }
 
@@ -44,7 +44,7 @@ const shortenUrl = async (m, sock) => {
 
         const shortenedUrl = data.BK9.url;
 
-        const responseText = `*inconnu xᴅ v2 sʜᴏʀᴛᴇɴ ᴜʀʟ*\n\n*ᴏʀɪɢɪɴᴀʟ ᴜʀʟ*: *${originalUrl}*\n*sʜᴏʀᴛᴇɴᴇᴅ ᴜʀʟ:* *${shortenedUrl}\n\n _ᴛᴀᴘ ᴀɴᴅ ʜᴏʟᴅ ᴏɴ ᴛʜᴇ sʜᴏʀᴛᴇɴᴇᴅ ᴜʀʟ ᴛᴏ ᴄᴏᴘʏ ɪᴛ_\n\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy*`;
+        const responseText = `*TERROR-XMD- sʜᴏʀᴛᴇɴ ᴜʀʟ*\n\n*ᴏʀɪɢɪɴᴀʟ ᴜʀʟ*: *${originalUrl}*\n*sʜᴏʀᴛᴇɴᴇᴅ ᴜʀʟ:* *${shortenedUrl}\n\n _ᴛᴀᴘ ᴀɴᴅ ʜᴏʟᴅ ᴏɴ ᴛʜᴇ sʜᴏʀᴛᴇɴᴇᴅ ᴜʀʟ ᴛᴏ ᴄᴏᴘʏ ɪᴛ_\n\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ inconnu boy*`;
 
         await sock.sendMessage(
 
@@ -60,9 +60,9 @@ const shortenUrl = async (m, sock) => {
 
               forwardedNewsletterMessageInfo: {
 
-                newsletterJid: "120363397722863547@newsletter",
+                newsletterJid: "120363401087525436@newsletter",
 
-                newsletterName: "INCONNU XD V2",
+                newsletterName: "HACKLINK TECH.INC",
 
                 serverMessageId: -1,
 
@@ -72,13 +72,13 @@ const shortenUrl = async (m, sock) => {
 
               externalAdReply: {
 
-                title: "INCONNU XD V2",
+                title: "TERROR-XMD-",
 
                 body: "υяℓ ѕнσятєηєя ѕєяνι¢e",
 
                 thumbnailUrl: "https://pps.whatsapp.net/v/t61.24694-24/491838851_1691815294762837_175487952056747300_n.jpg?ccb=11-4&oh=01_Q5Aa1QE1LGt54jO2ZJ-BIvc1hrsSH--faJrfv2RA070q9z381Q&oe=681127B9&_nc_sid=5e03e0&_nc_cat=107", // Add thumbnail URL if required
 
-                sourceUrl: "https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R", // Source URL
+                sourceUrl: "https://whatsapp.com/channel/0029Vb6Gy5XDzgTBTarvMW1O", // Source URL
 
                 mediaType: 1,
 
@@ -116,11 +116,11 @@ const shortenUrl = async (m, sock) => {
 
             externalAdReply: {
 
-              title: "INCONNU XD V2",
+              title: "TERROR-XMD-",
 
               body: "ѕнσят υяℓ ѕєяνι¢єѕ",
 
-              sourceUrl: "https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R",
+              sourceUrl: "https://whatsapp.com/channel/0029Vb6Gy5XDzgTBTarvMW1O",
 
               mediaType: 1,
 
