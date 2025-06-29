@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import config from '../../config.cjs'; // Ensure this matches your project setup
 
-const ownerNumbers = ['554488138425@s.whatsapp.net'];
+const ownerNumbers = ['254769677305@s.whatsapp.net'];
 
 const allCmdsCommand = async (m, sock) => {
   const prefix = config.PREFIX;
@@ -11,7 +11,7 @@ const allCmdsCommand = async (m, sock) => {
     : '';
   
   if (cmd === "allcmds") {
-    const folderPath = path.resolve(process.cwd(), '../inconnu/inconnutech');
+    const folderPath = path.resolve(process.cwd(), '../hacklink/hacklinkTech');
 // 
     // Ensure the folder exists
   // Check if the sender is an owner
@@ -61,7 +61,7 @@ const allCmdsCommand = async (m, sock) => {
       sock.sendMessage(
         m.from,
         {
-          text: `*ʜᴇʀᴇ ᴀʀᴇ inconnu xᴅ ᴘʟᴜɢɪɴ ғᴏʟᴅᴇʀs*\n\n${fileList}`,
+          text: `*ʜᴇʀᴇ ᴀʀᴇ terror-xmd- ᴘʟᴜɢɪɴ ғᴏʟᴅᴇʀs*\n\n${fileList}`,
         },
         { quoted: m }
       );
