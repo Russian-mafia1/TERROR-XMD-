@@ -7,8 +7,8 @@ const stickerCommand = async (m, gss) => {
   const [cmd, ...args] = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ') : [];
   const command = cmd.toLowerCase();
 
-  const defaultPackname = "inconnu xd v2";
-  const defaultAuthor = "INCONNU XD V2";
+  const defaultPackname = "TERROR-XMD-";
+  const defaultAuthor = "TERROR-XMD-";
 
   if (['sticker', 's', 'take'].includes(command)) {
     const quoted = m.quoted || {};
@@ -47,7 +47,7 @@ const stickerCommand = async (m, gss) => {
       // TAKE COMMAND (change packname)
       if (command === 'take') {
         if (quoted.mtype !== 'stickerMessage') {
-          return m.reply(`Please reply to a sticker to change its pack name.\nUsage: ${prefix}take inconnutech`);
+          return m.reply(`Please reply to a sticker to change its pack name.\nUsage: ${prefix}take hacklinkTech);
         }
 
         const newPackname = args.join(' ') || defaultPackname;
