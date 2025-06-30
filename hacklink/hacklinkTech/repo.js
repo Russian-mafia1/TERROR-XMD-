@@ -9,11 +9,11 @@ const repo = async (m, sock) => {
 
   if (cmd === "repo") {
     await m.React('🚀');
-    const repoUrl = 'https://github.com/Russian-mafia1/TERROR-XMD-';
+    const repoUrl = 'https://github.com/HACKLINK-TECH/TERROR-XMD-';
     const imageUrl = 'https://files.catbox.moe/zpjh78.jpg';
 
     try {
-      const apiUrl = `https://api.github.com/repos/Russian-mafia1/TERROR-XMD-`;
+      const apiUrl = `https://api.github.com/repos/HACKLINK-TECH/TERROR-XMD-`;
       const response = await fetch(apiUrl);
       const data = await response.json();
 
